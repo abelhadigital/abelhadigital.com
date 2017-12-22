@@ -1,0 +1,14 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Documents
+*.md text
+*.pdf diff=astextplain
+
+# Graphics
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary

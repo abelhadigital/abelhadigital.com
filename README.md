@@ -1,2 +1,3 @@
-# abelhadigital.com
-abelhadigital.com
+# abelhadigital.com (website)
+
+Licensed under MIT license.

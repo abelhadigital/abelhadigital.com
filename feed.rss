@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>abelhadigital.com</title>
+    <link>http://www.abelhadigital.com/feed.rss</link>
+    <description>abelhadigital.com develops software for Windows.</description>
+    <language>en</language>
+	<ttl>240</ttl>
+	<atom:link href="http://www.abelhadigital.com/feed.rss" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HostsMan v4.7.105</title>
+      <pubDate>Tue, 3 Jan 2017 12:00:00 +0100</pubDate>
+      <link>http://www.abelhadigital.com/hostsman</link>
+      <guid isPermaLink="false">http://www.abelhadigital.com/hostsman/release-notes</guid>
+      <description><![CDATA[HostsMan 4.7.105 released.]]></description>
+    </item>
+    <item>
+      <title>MultiHasher v2.8.2</title>
+      <pubDate>Mon, 29 Feb 2016 12:00:00 +0100</pubDate>
+      <link>http://www.abelhadigital.com/multihasher</link>
+      <guid isPermaLink="false">http://www.abelhadigital.com/multihasher/release-notes</guid>
+      <description><![CDATA[MultiHasher 2.8.2 released.]]></description>
+    </item>
+    <item>
+      <title>HostsServer v2.1.62</title>
+      <pubDate>Thu, 10 Jul 2014 12:00:00 +0100</pubDate>
+      <link>http://www.abelhadigital.com/hostsserver</link>
+      <guid isPermaLink="false">http://www.abelhadigital.com/hostsserver/release-notes</guid>
+      <description><![CDATA[HostsServer 2.1.62 released.]]></description>
+    </item>
+  </channel>
+</rss>
