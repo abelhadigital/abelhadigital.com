@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <meta name="description" content="HostsMan is a freeware application that let's you manage your hosts file with ease.">
+  <meta name="author" content="abelhadigital.com">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+
+  <title>HostsMan &middot; abelhadigital.com</title>
+  
+  <meta property="og:title" content="HostsMan &middot; abelhadigital.com">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://www.abelhadigital.com/hostsman">
+  <meta property="og:description" content="HostsMan is a freeware application that let's you manage your hosts file with ease.">
+  <meta property="og:image" content="http://www.abelhadigital.com/images/HostsMan.png">
+  <meta property="og:site_name" content="abelhadigital.com">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@abelha_digital" />
+  <meta name="twitter:title" content="HostsMan &middot; abelhadigital.com" />
+  <meta name="twitter:description" content="HostsMan is a freeware application that let's you manage your hosts file with ease." />
+  <meta name="twitter:image" content="http://www.abelhadigital.com/images/HostsMan.png" />
+  <meta name="twitter:image:alt" content="HostsMan logo" />
+
+  <link rel="https://cdnjs.cloudflare.com" rel="preconnect" crossorigin="anonymous">
+  <link rel="https://fonts.googleapis.com" rel="preconnect">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w="
+    crossorigin="anonymous" />
+
+  <!-- Ekko Lightbox css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.css" integrity="sha256-8aNQFtmxcOMVoOhLD4mrHqaKC2Ui++LmlQsoKTqxwIE="
+    crossorigin="anonymous" />
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="../css/vendor/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+    crossorigin="anonymous" />
+  <!-- Open Sans font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/normal.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#343c66",
+          "text": "#cfcfe8"
+        },
+        "button": {
+          "background": "#f71559"
+        }
+      },
+      "theme": "classic",
+      "position": "bottom-right",
+      "content": {
+        "dismiss": "I understand",
+        "href": "../privacy/cookies"
+      }
+    })});
+  </script>
+</head>
+
+<body id="hostsman">
+  <!-- Test presence of Bootstrap and font awesome -->
+  <div id="bootstrapCssTest" class="hidden"></div>
+  <div id="fontAwesomeTest" style="display:none"></div>
+
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar" aria-label="Skip to main navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="..">abelhadigital.com</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="../hostsman">HostsMan</a>
+          </li>
+          <li>
+            <a href="../multihasher">MultiHasher</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Software
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="../hostsserver">HostsServer</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../about">Contacts</a></li>
+          <li><a href="../donate">Donate</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div id="hostsman-title" class="software-title">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <p class="lead">
+            <img src="../images/HostsMan.png" alt="HostsMan logo" width="256" height="256">
+          </p>
+        </div>
+        <div class="col-md-8">
+          <h1>HostsMan is a freeware application that let's you manage your hosts file with ease.</h1>
+          <p class="lead">
+            <a class="btn btn-info btn-lg" href="#downloads">
+              <i class="fa fa-windows fa-lg" aria-hidden="true"></i>
+              <span class="download-label">Download HostsMan</span>
+            </a>
+          </p>
+          <p class="version">Current version: 4.7.105</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="hostsman-features" class="software-section software-features">
+    <div class="container text-center">
+      <h2>Features</h2>
+      <div class="row">
+        <div class="col-sm-4 feature-item">
+          <div>
+            <i class="fa fa-cloud-download fa-3x" aria-hidden="true"></i>
+          </div>
+          <h3>Built-in hosts file updater</h3>
+          <p>Update your hosts file using the built-in updater. Easily install the latest version of your favourite hosts file.</p>
+        </div>
+        <div class="col-sm-4 feature-item">
+          <div>
+            <i class="fa fa-file-archive-o fa-3x" aria-hidden="true"></i>
+          </div>
+          <h3>Custom updater sources</h3>
+          <p>Add your own local or remote sources to the hosts file updater.</p>
+        </div>
+        <div class="col-sm-4 feature-item">
+          <div>
+            <i class="fa fa-edit fa-3x" aria-hidden="true"></i>
+          </div>
+          <h3>HostsMan Editor</h3>
+          <p>Use the built-in editor to edit any hosts file.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 feature-item">
+          <div>
+            <i class="fa fa-exclamation-triangle fa-3x" aria-hidden="true"></i>
+          </div>
+          <h3>Fix errors</h3>
+          <p>HostsMan let's you quickly fix errors, remove duplicates and possible hijacks.</p>
+        </div>
+        <div class="col-sm-4 feature-item">
+          <div>
+            <i class="fa fa-bug fa-3x" aria-hidden="true"></i>
+          </div>
+          <h3>Troubleshooter</h3>
+          <p>HostsMan includes a basic troubleshooter to help identify the most common issues.</p>
+        </div>
+        <div class="col-sm-4 feature-item">
+          <div>
+            <i class="fa fa-files-o fa-3x" aria-hidden="true"></i>
+          </div>
+          <h3>Backup manager</h3>
+          <p>Use the built-in backup manager to create copies of your hosts file or quickly restore a previous version.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="additional-features" class="software-section">
+    <div class="container squeeze text-center">
+      <h2>Other Features</h2>
+      <ul class="list-group">
+        <li class="list-group-item">Enable/disable hosts file</li>
+        <li class="list-group-item">Supports .zip files</li>
+        <li class="list-group-item">Supports .7z files (if 7-Zip 32-bit is installed or 7z.dll is present)</li>
+        <li class="list-group-item">Exclusion list</li>
+        <li class="list-group-item">Built-in hostname resolver</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="screenshots" class="software-section">
+    <div class="container">
+      <h2 class="text-center">Screenshots</h2>
+      <div class="row text-center">
+        <div class="col-md-4 col-sm-6 screenshot-thumb">
+          <a href="../images/hm_001.png" data-toggle="lightbox" data-gallery="hostsman" data-title="Main window">
+            <img src="../images/th_hm_001.png" alt="HostsMan main window" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 screenshot-thumb">
+          <a href="../images/hm_002.png" data-toggle="lightbox" data-gallery="hostsman" data-title="Managing updater sources">
+            <img src="../images/th_hm_002.png" alt="Managing updater sources" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 screenshot-thumb">
+          <a href="../images/hm_003.png" data-toggle="lightbox" data-gallery="hostsman" data-title="Editing a source">
+            <img src="../images/th_hm_003.png" alt="Editing a source" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 screenshot-thumb">
+          <a href="../images/hm_004.png" data-toggle="lightbox" data-gallery="hostsman" data-title="Backup manager">
+            <img src="../images/th_hm_004.png" alt="Backup manager" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 screenshot-thumb">
+          <a href="../images/hm_005.png" data-toggle="lightbox" data-gallery="hostsman" data-title="HostsMan Editor">
+            <img src="../images/th_hm_005.png" alt="HostsMan Editor" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 screenshot-thumb">
+          <a href="../images/hm_006.png" data-toggle="lightbox" data-gallery="hostsman" data-title="Troubleshooter">
+            <img src="../images/th_hm_006.png" alt="Troubleshooter" class="img-fluid">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="downloads" class="software-section">
+    <div class="container">
+      <h2 class="text-center">Downloads</h2>
+      <div class="well well-lg">
+        <div class="row">
+          <div class="col-xs-12">
+            <dl class="dl-horizontal">
+              <dt>Version</dt>
+              <dd>4.7.105 &middot; <a href="./release-notes">View changelog</a></dd>
+              <dt>Release date</dt>
+              <dd>January 3rd, 2017</dd>
+              <dt>License</dt>
+              <dd>Freeware &middot; <a href="../licenses/hm-license.pdf" target="_blank">View</a> &middot; <a href="../licenses/hm-license.pdf" download="HostsMan License.pdf">Download</a></dd>
+              <dt>Supported OS</dt>
+              <dd>Windows XP SP2, Vista, 7, 8, 8.1, 10, Server 2003 SP1, Server 2008, Server 2008 R2, Server 2012, Server 2012 R2</dd>
+              <dt>Hashes</dt>
+              <dd><a href="#" data-toggle="modal" data-target="#myModal">View</a></dd>
+            </dl>
+            <div class="text-center dl-buttons">
+              <span>
+                <a class="btn btn-primary btn-lg btn-download" href="https://drive.google.com/uc?export=download&id=0B0N7Pu7pijFBejcxNXlLZVVMSnM">
+                  <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+                  <span class="download-label"><strong>Installer</strong></span><br><small>.zip &middot; 2.91 MB</small>
+                </a>
+              </span>
+              <span>
+                <a class="btn btn-info btn-lg  btn-download" href="https://drive.google.com/uc?export=download&id=0B0N7Pu7pijFBdm4xaFJpUkFNTTg">
+                  <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+                  <span class="download-label"><strong>No installer</strong></span><br><small>.zip &middot; 3.50 MB</small>
+                </a>
+              </span>
+            </div>
+            <dl class="dl-horizontal">
+              <dt>Alt. download links</dt>
+              <dd>
+                <a href="http://www.softpedia.com/get/Network-Tools/Misc-Networking-Tools/HostsMan.shtml" class="label label-default">Installer - Mirror #1</a> &middot;
+                <a href="http://www.softpedia.com/get/Network-Tools/Misc-Networking-Tools/HostsMan-Portable.shtml" class="label label-default">No installer - Mirror #1</a> &middot;
+                <a href="http://hostsman2.it-mate.co.uk/HostsMan_4.8.106_installer.zip" class="label label-default">Installer - Mirror #2</a> &middot;
+                <a href="http://hostsman2.it-mate.co.uk/HostsMan_4.8.106.zip" class="label label-default">No installer - Mirror #2</a>
+              </dd>
+            </dl>          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title">Hashes for MultiHasher files</h4>
+        </div>
+        <div class="modal-body">
+          <h5 class="text-primary">Installer</h5>
+          <dl class="well well-sm">
+            <dt>SHA-1:</dt>
+            <dd>
+              <samp>4bf1058637979f93d55f615b11eaba4f4e33e893</samp>
+            </dd>
+            <dt>SHA-256:</dt>
+            <dd>
+              <samp>13023db26c5ff2c64e83aac3f9249d6a21b1cca985542309bf182032d26f9c24</samp>
+            </dd>
+          </dl>
+          <h5 class="text-primary">Portable</h5>
+          <dl class="well well-sm">
+            <dt>SHA-1:</dt>
+            <dd>
+              <samp>a1e9b079a2857aa7fb1d3bd0561e308ac1291cb6</samp>
+            </dd>
+            <dt>SHA-256:</dt>
+            <dd>
+              <samp>b98f1155cda04e8a96cf29f6cc68497bdb28add7c8317cae79f6ec34c3bdc7fa</samp>
+            </dd>
+          </dl>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <footer class="footer">
+    <div id="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4">
+            <div class="footer-heading">Software</div>
+            <ul class="list-unstyled footer-links">
+              <li class=""><a href="../hostsman">HostsMan</a></li>
+              <li><a href="../hostsserver">HostsServer</a></li>
+              <li><a href="../multihasher">MultiHasher</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="footer-heading">Links</div>
+            <ul class="list-unstyled footer-links">
+              <li><a href="../about">About</a></li>
+              <li><a href="../donate">Donate</a></li>
+              <li><a href="../reportbug">Report Bugs</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="footer-heading">Social</div>
+            <ul class="list-inline">
+              <li id="icon-facebook"><a href="https://www.facebook.com/abelhadigital" title="Facebook" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+              <li id="icon-twitter"><a href="https://twitter.com/abelha_digital" title="Twitter" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+              <li id="icon-email"><a href="mailto:info@abelhadigital.com" title="Email" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+              <li id="icon-rss"><a href="feed.rss" title="RSS feed" target="_blank"><i class="fa fa-rss fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-bottom">
+      <div class="container">
+        <ul class="list-inline">
+          <li>Copyright © 1997-2017 abelhadigital.com</li>
+          <li><a href="../privacy">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- jQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <!-- jQuery JS local fallback -->
+  <script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
+  <!-- Bootstrap CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8="
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap JS local fallback -->
+  <script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="../js/vendor/bootstrap.min.js"><\/script>')}</script>
+  <!-- Bootstrap CSS local fallback -->
+  <script>
+    $(document).ready(function() {
+      if ($('#bootstrapCssTest').is(':visible') === true) {
+        $("head").prepend('<link href="../css/vendor/bootstrap.min.css" rel="stylesheet" type="text/css" />');}});
+  </script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../js/vendor/ie10-viewport-bug-workaround.js"></script>
+  <!-- Font Awesome local fallback -->
+  <script>(function($) {
+        var $span = $('<span class="fa" style="display:none"></span>');
+        $('#fontAwesomeTest').append($span)
+        var f = $span.css('fontFamily');
+        if (f !== 'FontAwesome') {
+          $('head').append('<link href="../css/vendor/font-awesome.min.css" rel="stylesheet">');
+        }
+        })(jQuery);
+  </script>
+  <!-- Ekko Lightbox CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js" integrity="sha256-1odJPEl+KoMUaA1T7QNMGSSU/r5LCKCRC6SL8P0r2gY="
+    crossorigin="anonymous"></script>
+  <!-- Ekko Lightbox local fallback -->
+  <script>
+    $(document).ready(function() {
+      if (typeof($.fn.ekkoLightbox) === 'undefined') {
+        $("head").prepend('<link href="../css/vendor/ekko-lightbox.min.css" rel="stylesheet" type="text/css" />');}});
+  </script>
+
+  <!-- Enable lightbox -->
+  <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+  </script>
+  <!-- Enable modal dialogs -->
+  <script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+    });
+  </script>
+
+</body>
+
+</html>

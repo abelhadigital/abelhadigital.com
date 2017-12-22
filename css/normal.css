@@ -1,0 +1,343 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: 50px;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 260px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 260px;
+}
+
+.section {
+  margin-top: 30px;
+}
+
+#introduction {
+  color: #777;
+  font-size: 18px;
+  text-align: center;
+}
+
+.software-title {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.software-title h1 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.software-title .lead {
+  font-size: 30px;
+}
+
+.download-label {
+  padding-left: 10px;
+}
+.dl-buttons {
+  margin-bottom: 20px;
+}
+
+#screenshots {
+  border-bottom: 1px solid #eee;
+}
+
+.screenshot-thumb {
+  padding-bottom: 10px;
+}
+
+.software-section {
+  padding: 50px 0;
+}
+
+.software-section h2 {
+  margin-bottom: 50px;
+}
+
+.doc-body {
+  color: #777;
+}
+
+.doc-body h1 {
+  margin-bottom: 40px;
+  color: black;
+}
+
+.doc-body h2 {
+  margin-bottom: 20px;
+  font-size: 1.4em;
+  color: black;
+}
+
+#multihasher-title {
+  background-color: #007acc;
+  color: white;
+}
+
+#multihasher-features .fa {
+  color: #007acc;
+}
+
+#multihasher-title .version {
+  color: #BDC6CC;
+  margin-top: -15px;
+}
+
+body#multihasher .software-section h2 {
+  color: #005195;
+}
+
+#hostsman-title {
+  background-color: #34bf49;
+  color: white;
+}
+
+#hostsman-features .fa {
+  color: #34bf49;
+}
+
+#hostsman-title .version {
+  color: #eee;
+  margin-top: -15px;
+}
+
+body#hostsman .software-section h2 {
+  color: #2baf2b;
+}
+
+#additional-features {
+  background-color: #eeeeee;
+}
+
+.feature-item {
+  padding-bottom: 20px;
+}
+
+.btn-download {
+  min-width: 200px;
+}
+
+.squeeze {
+  max-width: 500px;
+}
+
+.squeeze-800 {
+  max-width: 800px;
+}
+
+.squeeze-900 {
+  max-width: 900px;
+}
+
+.squeeze-1000 {
+  max-width: 1000px;
+}
+
+.release-notes {
+  margin-top: 50px;
+}
+
+.release-notes .container {
+  max-width: 800px;
+}
+
+.release-notes ul {
+  margin-bottom: 40px;
+  display: table;
+}
+
+.release-notes li {
+  padding-left: 100px;
+  margin: 0 0 12px;
+}
+
+.release-notes h1 {
+  margin-bottom: 30px;
+}
+
+.release-notes .version {
+  height: 3.7em;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 1.5em;
+  padding: 0 5px;
+}
+
+.version-number {
+  font-size: 24pt;
+}
+
+.version-date {
+  padding-top: 0.9em;
+  font-size: 14pt;
+  color: #777;
+}
+
+li .changelog-label {
+  float:left;
+  margin-left: -100px;
+  width: 80px;
+  text-align: right;
+}
+
+.change-label {
+  font-style: normal;
+  color: white;
+  padding: 2px 8px;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.change-new {
+  background-color: #6cbc35;
+}
+
+.change-fixed {
+  background-color: #ff3c41;
+}
+
+.change-updated {
+  background-color: #0066b2;
+}
+
+#footer-top {
+  background-color: #252525;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: white;
+  font-size: 14px;
+  height: 180px;
+}
+
+#footer-bottom {
+  background-color: #1a1a1a;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: #777;
+}
+
+.footer-heading {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+ul.footer-links li {
+  padding-block-start: 2px;
+}
+
+footer a, footer a:hover, footer a:focus {
+  color: white;
+}
+
+#icon-facebook a:hover {
+  color: #3b5998;
+}
+
+.clr-facebook {
+  color: #3b5998;
+}
+
+#icon-twitter a:hover {
+  color: #1da1f2;
+}
+
+.clr-twitter {
+  color: #1da1f2;
+}
+
+#icon-email a:hover {
+  color: #ea4335;
+}
+
+.clr-email {
+  color: #ea4335;
+}
+
+#icon-rss a:hover {
+  color: #f26522;
+}
+
+.clr-linkedin {
+  color: #0077b5;
+}
+
+.team {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.profile .profile-header {
+  color: #999;
+}
+
+.profile h2{
+	font-weight: normal;
+	font-size: 20px;
+	margin:10px 0 0 0;
+}
+
+.profile h3{
+	font-size: 14px;
+	font-weight: lighter;
+	margin-top: 5px;
+}
+
+.profile .contacts {
+    padding: 0;
+    margin-bottom: 17px;
+    font-size: 24px;
+}
+
+.profile .contacts a {
+  text-decoration: none;
+}
+
+.about-hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #eee;
+}
+
+.about-title {
+  margin-bottom: 40px;
+}
+
+#porto-logo {
+  height: 100%;
+  width: auto;
+  max-height: 60px;
+}
+
+.icon {
+  font-size: 50px;
+}
+
+.large-icons {
+  margin-top: 20px;
+}
+
+.large-icons h2 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#copyright-notice {
+  padding-bottom: 70px;
+}
+
+#img-donate {
+  margin-top: 20px;
+}

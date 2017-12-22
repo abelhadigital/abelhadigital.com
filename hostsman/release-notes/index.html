@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <link rel="icon" href="../../favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon"/>
+
+  <title>HostsMan &middot; abelhadigital.com</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="../../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+
+  <!-- Custom styles for this template -->
+  <link href="../../css/normal.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#343c66",
+          "text": "#cfcfe8"
+        },
+        "button": {
+          "background": "#f71559"
+        }
+      },
+      "theme": "classic",
+      "position": "bottom-right",
+      "content": {
+        "dismiss": "I understand",
+        "href": "../../privacy/cookies"
+      }
+    })});
+  </script>
+</head>
+
+<body>
+  <!-- Test presence of Bootstrap -->
+  <div id="bootstrapCssTest" class="hidden"></div>
+  <div id="fontAwesomeTest" style="display:none"></div>
+
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Skip to main navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../..">abelhadigital.com</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="../../hostsman">HostsMan</a></li>
+          <li><a href="../../multihasher">MultiHasher</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Software <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="../../hostsserver">HostsServer</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../../about">Contacts</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div class="release-notes">
+    <div class="container">
+      <h1 class="text-center"><a href="../history.txt" title="View as text"><i class="fa fa-file-text-o fa-fw" aria-hidden="true"></i></a> Release notes for HostsMan</h1>
+      <div id="release-notes">
+        <section>
+          <header class="version">
+            <div class="row">
+              <div class="col-xs-6 version-number">v4.7.105</div>
+              <div class="col-xs-6 version-date text-right">2017-Jan-3</div>
+            </div>
+          </header>
+          <ul class="list-unstyled">
+            <li><div class="changelog-label"><em class="change-label change-new">New</em></div>Update Manager dialog now has the option to open local update source files in editor</li>
+            <li><div class="changelog-label"><em class="change-label change-new">New</em></div>Added "Dan Pollock's hosts file" source</li>
+            <li><div class="changelog-label"><em class="change-label change-updated">Updated</em></div>More information is displayed when hosts file is in use by other applications (Vista and later)</li>
+            <li><div class="changelog-label"><em class="change-label change-updated">Updated</em></div>Updated URLs for "Peter Lowe's AdServers List" and "Malware Domain List" sources</li>
+            <li><div class="changelog-label"><em class="change-label change-fixed">Fixed</em></div>Control of DNS Client service is broken</li>
+            <li><div class="changelog-label"><em class="change-label change-fixed">Fixed</em></div>"Export Hosts" always exports to zip file under Vista and later</li>
+            <li><div class="changelog-label"><em class="change-label change-fixed">Fixed</em></div>Minor bugs</li>
+          </ul>
+        </section>
+        <section>
+          <header class="version">
+            <div class="version-number">v4.6.103</div>
+          </header>
+          <ul class="list-unstyled">
+            <li><div class="changelog-label"><em class="change-label change-new">New</em></div>Added more settings to update sources</li>
+            <li><div class="changelog-label"><em class="change-label change-new">New</em></div>Backup Manager is now accessible from HostsMan Editor (cannot restore backups)</li>
+            <li><div class="changelog-label"><em class="change-label change-updated">Improved</em></div>Compatibility with Windows 10</li>
+            <li><div class="changelog-label"><em class="change-label change-updated">Improved</em></div>Minor UI improvements</li>
+            <li><div class="changelog-label"><em class="change-label change-fixed">Fixed</em></div>Access violation when deleting multiple sources in source manager</li>
+            <li><div class="changelog-label"><em class="change-label change-fixed">Fixed</em></div>Some dialogs in HostsMan Editor may not work under Windows Vista and later</li>
+            <li><div class="changelog-label"><em class="change-label change-fixed">Fixed</em></div>Minor bugs</li>
+          </ul>
+        </section>
+        <section>
+          <header class="version">
+            <div class="version-number">v4.5.102</div>
+          </header>
+          <ul class="list-unstyled">
+            <li><div class="changelog-label"><em class="change-label change-new">New</em></div>Import exclusion list by dropping file to the "Exclusion List" window</li>
+            <li><div class="changelog-label"><em class="change-label change-updated">Changed</em></div>"Import/Export..." menu item replaced with "Import Hosts..." and "Export Hosts..." items</li>
+            <li><div class="changelog-label"><em class="change-label change-updated">Changed</em></div>Exclusion List window is now resizable</li>
+            <li><div class="changelog-label"><em class="change-label change-updated">Improved</em></div>Minor UI improvements</li>
+            <li><div class="changelog-label"><em class="change-label change-fixed">Fixed</em></div>Minor bugs</li>
+          </ul>
+        </section>
+        <section>
+          <header class="version">
+            <div class="version-number">v4.4.101</div>
+          </header>
+          <ul class="list-unstyled">
+            <li><div class="changelog-label"><em class="change-label change-new">New</em></div>Added support for high contrast themes</li>
+            <li><div class="changelog-label"><em class="change-label change-new">New</em></div>Added option to enable/disable automatic start for all users</li>
+            <li><div class="changelog-label"><em class="change-label change-new">New</em></div>Added support for multiple file selection to Backup Manager</li>
+            <li><div class="changelog-label"><em class="change-label change-updated">Improved</em></div>Memory usage</li>
+            <li><div class="changelog-label"><em class="change-label change-updated">Improved</em></div>If built-in decompressor can't decompress a specific zip file, 7z.dll is used instead (if available)</li>
+            <li><div class="changelog-label"><em class="change-label change-updated">Improved</em></div>Exclusion list rule validation</li>
+            <li><div class="changelog-label"><em class="change-label change-fixed">Fixed</em></div>Minor bugs</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div id="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4">
+            <div class="footer-heading">Software</div>
+            <ul class="list-unstyled footer-links">
+              <li class=""><a href="../../hostsman">HostsMan</a></li>
+              <li><a href="../../hostsserver">HostsServer</a></li>
+              <li><a href="../../multihasher">MultiHasher</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="footer-heading">Links</div>
+            <ul class="list-unstyled footer-links">
+              <li><a href="../../about">About</a></li>
+              <li><a href="../../donate">Donate</a></li>
+              <li><a href="../../reportbug">Report Bugs</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="footer-heading">Social</div>
+            <ul class="list-inline">
+              <li id="icon-facebook"><a href="https://www.facebook.com/abelhadigital" title="Facebook" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+              <li id="icon-twitter"><a href="https://twitter.com/abelha_digital" title="Twitter" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+              <li id="icon-email"><a href="mailto:info@abelhadigital.com" title="Email" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+              <li id="icon-rss"><a href="feed.rss" title="RSS feed" target="_blank"><i class="fa fa-rss fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-bottom">
+      <div class="container">
+        <ul class="list-inline">
+          <li>Copyright © 1997-2017 abelhadigital.com</li>
+          <li><a href="../../privacy">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- jQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <!-- jQuery JS local fallback -->
+  <script>window.jQuery || document.write('<script src="../../js/vendor/jquery.min.js"><\/script>')</script>
+  <!-- Bootstrap CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8="
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap JS local fallback -->
+  <script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="../../js/vendor/bootstrap.min.js"><\/script>')}</script>
+  <!-- Bootstrap CSS local fallback -->
+  <script>
+    $(document).ready(function() {
+      if ($('#bootstrapCssTest').is(':visible') === true) {
+        $("head").prepend('<link href="../../css/vendor/bootstrap.min.css" rel="stylesheet" type="text/css" />');}});
+  </script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../js/vendor/ie10-viewport-bug-workaround.js"></script>
+  <!-- Font Awesome local fallback -->
+  <script>(function($) {
+        var $span = $('<span class="fa" style="display:none"></span>');
+        $('#fontAwesomeTest').append($span)
+        var f = $span.css('fontFamily');
+        if (f !== 'FontAwesome') {
+          $('head').append('<link href="../../css/vendor/font-awesome.min.css" rel="stylesheet">');
+        }
+        })(jQuery);
+  </script>
+
+</body>
+</html>

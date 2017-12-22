@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <meta name="description" content="MultiHasher is a freeware file hash calculator.">
+  <meta name="author" content="abelhadigital.com">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+
+  <title>MultiHasher &middot; abelhadigital.com</title>
+
+  <meta property="og:title" content="MultiHasher &middot; abelhadigital.com">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://www.abelhadigital.com/multihasher">
+  <meta property="og:description" content="MultiHasher is a freeware file hash calculator.">
+  <meta property="og:image" content="https://rlfoundry.github.io/abelhadigital/images/MultiHasher.png">
+  <meta property="og:site_name" content="abelhadigital.com">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@abelha_digital" />
+  <meta name="twitter:title" content="MultiHasher &middot; abelhadigital.com" />
+  <meta name="twitter:description" content="MultiHasher is a freeware file hash calculator." />
+  <meta name="twitter:image" content="https://rlfoundry.github.io/abelhadigital//MultiHasher.png" />
+  <meta name="twitter:image:alt" content="MultiHasher logo" />
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w="
+    crossorigin="anonymous" />
+
+  <!-- Ekko Lightbox css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.css" integrity="sha256-8aNQFtmxcOMVoOhLD4mrHqaKC2Ui++LmlQsoKTqxwIE="
+    crossorigin="anonymous" />
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="../css/vendor/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+    crossorigin="anonymous" />
+  <!-- Open Sans font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/normal.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#343c66",
+          "text": "#cfcfe8"
+        },
+        "button": {
+          "background": "#f71559"
+        }
+      },
+      "theme": "classic",
+      "position": "bottom-right",
+      "content": {
+        "dismiss": "I understand",
+        "href": "../privacy/cookies"
+      }
+    })});
+  </script>
+</head>
+
+<body id="multihasher">
+  <!-- Test presence of Bootstrap and font awesome -->
+  <div id="bootstrapCssTest" class="hidden"></div>
+  <div id="fontAwesomeTest" style="display:none"></div>
+
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Skip to main navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="..">abelhadigital.com</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="../hostsman">HostsMan</a></li>
+          <li class="active"><a href="../multihasher">MultiHasher</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Software <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="../hostsserver">HostsServer</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../about">Contacts</a></li>
+          <li><a href="../donate">Donate</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div id="multihasher-title" class="software-title">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <p class="lead">
+            <img src="../images/MultiHasher.png" alt="MultiHasher logo" width="256" height="256">
+          </p>
+        </div>
+        <div class="col-md-8">
+          <h1>MultiHasher is a freeware file hash calculator.</h1>
+          <p class="lead">
+            <a class="btn btn-success btn-lg" href="#downloads">
+              <i class="fa fa-windows fa-lg" aria-hidden="true"></i>
+              <span class="download-label">Download MultiHasher</span>
+            </a>
+          </p>
+          <p class="version">Current version: 2.8.2</p>
+          <p class="version">Development version: 2.99 Beta</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="multihasher-features" class="software-section software-features">
+    <div class="container text-center">
+      <h2>Features</h2>
+      <div class="row">
+        <div class="col-sm-4 feature-item">
+          <div><i class="fa fa-calculator fa-3x" aria-hidden="true"></i></div>
+          <h3>Multiple algorithms</h3>
+          <p>Currently, MultiHasher supports the following algorithms: CRC-32, MD5, RIPEMD-160, SHA-1 and SHA-2.</p>
+        </div>
+        <div class="col-sm-4 feature-item">
+          <div><i class="fa fa-files-o fa-3x" aria-hidden="true"></i></div>
+          <h3>Multiple files support</h3>
+          <p>MultiHasher supports the calculation of multiple files. Add or remove files to the file queue while calculation is in progress.</p>
+        </div>
+        <div class="col-sm-4 feature-item">
+          <div><i class="fa fa-align-left fa-3x" aria-hidden="true"></i></div>
+          <h3>Text hashing</h3>
+          <p>Calculate hash of a text string. Most unicode encodings are supported, including big and little-endian byte sequences.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 feature-item">
+          <div><i class="fa fa-windows fa-3x" aria-hidden="true"></i></div>
+          <h3>Windows integration</h3>
+          <p>Includes option to launch MultiHasher from Windows Explorer context menu.</p>
+        </div>
+        <div class="col-sm-4 feature-item">
+          <div><i class="fa fa-search fa-3x" aria-hidden="true"></i></div>
+          <h3>VirusTotal support</h3>
+          <p>Supports querying VirusTotal database, as well as, uploading new files from the UI.</p>
+        </div>
+        <div class="col-sm-4 feature-item">
+          <div><i class="fa fa-language fa-3x" aria-hidden="true"></i></div>
+          <h3>Localizable UI</h3>
+          <p>MultiHasher is currently available in English (UK and US), Portuguese (Brazil and Portugal), Dutch, Spanish, Russian, French, Italian, Greek, Polish, Turkish and Korean.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="additional-features" class="software-section">
+    <div class="container squeeze text-center">
+      <h2>Other Features</h2>
+      <ul class="list-group">
+        <li class="list-group-item">Hash file verification (MHX, SFV, FCIV, MD5Sum, etc.)</li>
+        <li class="list-group-item">Supports NT file namespace</li>
+        <li class="list-group-item">Partial file calculation</li>
+        <li class="list-group-item">Drag'n'drop support</li>
+        <li class="list-group-item">Hash calculation can be paused or canceled</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="screenshots" class="software-section">
+    <div class="container text-center">
+      <h2>Screenshots</h2>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 screenshot-thumb">
+          <a href="../images/mh_2.8_001.png" data-toggle="lightbox" data-gallery="multihasher" data-title="Main window">
+            <img src="../images/th_mh_2.8_001.png" alt="MultiHasher main window" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-6 col-sm-6 screenshot-thumb">
+          <a href="../images/mh_2.8_002.png" data-toggle="lightbox" data-gallery="multihasher" data-title="Main window">
+            <img src="../images/th_mh_2.8_002.png" alt="MultiHasher main window" class="img-fluid">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="downloads" class="software-section">
+    <div class="container" >
+      <h2 class="text-center">Downloads</h2>
+      <div class="well well-lg">
+        <div class="row">
+          <div class="col-xs-12">
+            <dl class="dl-horizontal">
+              <dt>Version</dt>
+              <dd>2.8.2 &middot; <a href="./release-notes">View changelog</a></dd>
+              <dt>Release date</dt>
+              <dd>February 22nd, 2017</dd>
+              <dt>License</dt>
+              <dd>Freeware &middot; <a href="../licenses/license.pdf" target="_blank">View</a> &middot; <a href="../licenses/license.pdf" download="MultiHasher License.pdf">Download</a></dd>
+              <dt>Supported OS</dt>
+              <dd>Windows XP SP3, Vista, 7, 8, 8.1, 10, Server 2003 SP1, Server 2008, Server 2008 R2, Server 2012, Server 2012 R2</dd>
+              <dt>Hashes</dt>
+              <dd><a href="#" data-toggle="modal" data-target="#myModal">View</a></dd>
+            </dl>
+            <div class="text-center dl-buttons">
+              <span>
+                <a class="btn btn-primary btn-lg btn-download" href="https://drive.google.com/uc?export=download&id=0B0N7Pu7pijFBRVhQZWJtNGRrMHM">
+                  <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+                  <span class="download-label"><strong>Installer</strong></span><br><small>.zip &middot; 2.40 MB</small>
+                </a>
+              </span>
+              <span>
+                <a class="btn btn-info btn-lg  btn-download" href="https://drive.google.com/uc?export=download&id=0B0N7Pu7pijFBYTV3dllWdWxBZjA">
+                  <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+                  <span class="download-label"><strong>No installer</strong></span><br><small>.zip &middot; 2.88 MB</small>
+                </a>
+              </span>
+            </div> 
+            <dl class="dl-horizontal">
+                <dt>Alt. download links</dt>
+                <dd>
+                  <a href="http://www.softpedia.com/get/System/File-Management/MultiHasher.shtml" class="label label-default">Installer - Mirror #1</a> &middot;
+                  <a href="http://www.softpedia.com/get/PORTABLE-SOFTWARE/System/File-management/MultiHasher-Portable.shtml" class="label label-default">No installer - Mirror #1</a>
+                </dd>
+              </dl>        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Hashes for MultiHasher files</h4>
+        </div>
+        <div class="modal-body">
+          <h5 class="text-primary">Installer</h5>
+          <dl class="well well-sm">
+            <dt>SHA-1:</dt>
+            <dd><samp>7619f7a0c619d7ded1fe6f3161782712eed984d6</samp></dd>
+            <dt>SHA-256:</dt>
+            <dd><samp>9cf08b4219e523f291a0888da39194de4de7af00e852dff0c3f429fe918bf073</samp></dd>
+          </dl>
+          <h5 class="text-primary">Portable</h5>
+          <dl class="well well-sm">
+            <dt>SHA-1:</dt>
+            <dd><samp>723d742885aa942136cc2e57a7f7db1242ee4c58</samp></dd>
+            <dt>SHA-256:</dt>
+            <dd><samp>31dc7880b7e902699f2047c0d679f3c42c270a185f9c6fcf47a5a73f3e6b5797</samp></dd>
+          </dl>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <footer class="footer">
+    <div id="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4">
+            <div class="footer-heading">Software</div>
+            <ul class="list-unstyled footer-links">
+              <li class=""><a href="../hostsman">HostsMan</a></li>
+              <li><a href="../hostsserver">HostsServer</a></li>
+              <li><a href="../multihasher">MultiHasher</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="footer-heading">Links</div>
+            <ul class="list-unstyled footer-links">
+              <li><a href="../about">About</a></li>
+              <li><a href="../donate">Donate</a></li>
+              <li><a href="../reportbug">Report Bugs</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="footer-heading">Social</div>
+            <ul class="list-inline">
+              <li id="icon-facebook"><a href="https://www.facebook.com/abelhadigital" title="Facebook" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+              <li id="icon-twitter"><a href="https://twitter.com/abelha_digital" title="Twitter" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+              <li id="icon-email"><a href="mailto:info@abelhadigital.com" title="Email" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+              <li id="icon-rss"><a href="feed.rss" title="RSS feed" target="_blank"><i class="fa fa-rss fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-bottom">
+      <div class="container">
+        <ul class="list-inline">
+          <li>Copyright © 1997-2017 abelhadigital.com</li>
+          <li><a href="../privacy">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- jQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <!-- jQuery JS local fallback -->
+  <script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
+  <!-- Bootstrap CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8="
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap JS local fallback -->
+  <script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="../js/vendor/bootstrap.min.js"><\/script>')}</script>
+  <!-- Bootstrap CSS local fallback -->
+  <script>
+    $(document).ready(function() {
+      if ($('#bootstrapCssTest').is(':visible') === true) {
+        $("head").prepend('<link href="../css/vendor/bootstrap.min.css" rel="stylesheet" type="text/css" />');}});
+  </script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../js/vendor/ie10-viewport-bug-workaround.js"></script>
+  <!-- Font Awesome local fallback -->
+  <script>(function($) {
+        var $span = $('<span class="fa" style="display:none"></span>');
+        $('#fontAwesomeTest').append($span)
+        var f = $span.css('fontFamily');
+        if (f !== 'FontAwesome') {
+          $('head').append('<link href="../css/vendor/font-awesome.min.css" rel="stylesheet">');
+        }
+        })(jQuery);
+  </script>
+  <!-- Ekko Lightbox CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js" integrity="sha256-1odJPEl+KoMUaA1T7QNMGSSU/r5LCKCRC6SL8P0r2gY="
+    crossorigin="anonymous"></script>
+  <!-- Ekko Lightbox local fallback -->
+  <script>
+    $(document).ready(function() {
+      if (typeof($.fn.ekkoLightbox) === 'undefined') {
+        $("head").prepend('<link href="../css/vendor/ekko-lightbox.min.css" rel="stylesheet" type="text/css" />');}});
+  </script>
+
+  <!-- Enable lightbox -->
+  <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+  </script>
+  <!-- Enable modal dialogs -->
+  <script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+    });
+  </script>
+
+</body>
+</html>
